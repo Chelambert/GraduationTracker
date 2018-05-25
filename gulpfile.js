@@ -14,7 +14,7 @@ gulp.task('help', $.taskListing);
 // Global Jobs
 gulp.task('__start-local__', ['task:compile-styles', 'task:compile-scripts', 'task:compile-html', 'task:compile-images', 'task:start-watch']);
 gulp.task('__compile-assets__', ['task:compile-styles', 'task:compile-scripts', 'task:compile-html', 'task:compile-images']);
-gulp.task('__lint-everything__', ['_lint-styles_','_lint-feature-styles_', '_lint-scripts_']);
+gulp.task('__lint-everything__', ['_lint-styles_', '_lint-feature-styles_', '_lint-scripts_']);
 
 ////////////////
 // Local Tasks
@@ -44,6 +44,10 @@ gulp.task('task:compile-html', () => {
     return gulp
         .src(config.html.source)
         .pipe($.changed(config.html.build))
+        .pipe($.fileInclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
         .pipe(gulp.dest(config.html.build));
 });
 
