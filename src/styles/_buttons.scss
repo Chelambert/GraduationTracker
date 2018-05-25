@@ -1,3 +1,24 @@
-body {
-    background: rgb(120, 207, 48);
+
+.btn{
+    background-color: white;
+    border: 1px solid #2D3B45;
+    color: #2D3B45;
+    padding: 15px 32px;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: Helvetica;
+    transition: all 0.3s ease 0s;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 975px;
+
+    &:hover{
+        background-color: #2D3B45;
+        color: white;
+        transition: all 0.3s ease 0s;
+
+    }
 }
+

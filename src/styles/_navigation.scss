@@ -1,24 +1,98 @@
-
-ul{
+.main-nav{
     height: 100vh;
     list-style-type: none;
-    background-color: #2D3B45;
-    padding: 25px;
+    background-color: #2d3b45;
     margin: -10px;
+    text-align: center;
+    position: fixed;
 }
 
-.nav__link{
+.nav-item {
+    flex: 1;
     color: white;
-    font-family: Lato;
-    font-size: 15px;
-}
-
-li{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    display: block;
+    padding: 0.25rem 1.75rem;
+    transition: all 0.3s ease 0s;
 
     &:hover{
-
+        text-decoration: none;
+        background-color: darken($brand-primary, 10%);
+        transition: all 0.3s ease 0s;
     }
 
+    // &--active{
+    //     background: white;
+    // }
+}
+
+.nav-item--active{
+    background: white;
+
+    &:hover{
+        background: white;
+    }
+}
+
+.nav__icon {
+    width: 100%;
+    padding-bottom: 100%;
+    margin: 1rem 0;
+    max-height: 25px;
+    background: {
+        image: url('../images/icon_classes_white.png');
+        size: contain;
+        repeat: no-repeat;
+    }
+    display: block;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    .nav-item--active &{
+        background-image: url('../images/icon_classes_blue.png');
+    }
+
+    &--profile {
+        border-radius: 50%;
+        background-image: url('../images/Profile.jpg');
+        .nav-item--active &{
+            background-image: url('../images/Profile.jpg');
+            border: 2px solid lightgray;
+        }
+    }
+
+    &--todo {
+        background-image: url('../images/icon_todo_white.png');
+        .nav-item--active &{
+            background-image: url('../images/icon_todo_blue.png');
+        }
+    }
+
+    &--tracker {
+        background-image: url('../images/icon_tracker_white.png');
+        .nav-item--active &{
+            background-image: url('../images/icon_tracker_blue.png');
+        }
+    }
+
+    &--inbox {
+        background-image: url('../images/icon_inbox_white.png');
+        .nav-item--active &{
+            background-image: url('../images/icon_inbox_blue.png');
+        }
+    }
+}
+
+.nav__text{
+    font-size: 14px;
+    font-family: helvetica;
+    font-weight: lighter;
+    .nav-item--active &{
+        color: $brand-secondary;
+    }
+}
+
+.nav__icon--profile {
+    border: 2px solid white;
 }

@@ -6,34 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Graduation Tracker</title>
-    <link rel="stylesheet" href="styles/navigation.css">
+    <link rel="stylesheet" href="styles/styles.css">
+
 </head>
 
 <body>
     <div class="wrapper wrapper--nav">
         <div class="container">
             <header class="nav">
-                <ul>
-                    <nav>
-                        <li>
-                            <a class="nav__link" href="index.html">Profile</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="classes.html">Classes</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="todo.html">To Do</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="tracker.html">Tracker</a>
-                        </li>
-                        <li>
-                            <a class="nav__link" href="inbox.html">Inbox</a>
-                        </li>
-                    </nav>
-                </ul>
+
+                <nav class="main-nav">
+                    <a href="index.html" class="nav-item nav-item--profile">
+                        <span class="nav__icon nav__icon--profile"></span>
+                        <span class="nav__text">Profile</span>
+                    </a>
+
+                    <a href="#" class="nav-item nav-item--active">
+                        <span class="nav__icon nav__icon--class"></span>
+                        <span class="nav__text">Classes</span>
+                    </a>
+
+                    <a href="#" class="nav-item nav-item--todo">
+                        <span class="nav__icon nav__icon--todo"></span>
+                        <span class="nav__text">To Do</span>
+                    </a>
+
+                    <a href="#" class="nav-item nav-item--tracker">
+                        <span class="nav__icon nav__icon--tracker"></span>
+                        <span class="nav__text">Tracker</span>
+                    </a>
+
+                    <a href="#" class="nav-item nav-item--inbox">
+                        <span class="nav__icon nav__icon--inbox"></span>
+                        <span class="nav__text">Inbox</span>
+                    </a>
+                </nav>
 
             </header>
+
         </div>
     </div>
 
