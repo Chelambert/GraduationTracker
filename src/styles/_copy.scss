@@ -5,8 +5,10 @@
     font-family: Helvetica;
     font-weight: lighter;
     padding-left: 150px;
+    margin-top: -1px;
     color: $brand-primary;
     position: fixed;
+
 }
 
 .page-subtitle{
@@ -29,7 +31,7 @@
     font-weight: lighter;
     float: left;
     margin-top: -80px;
-    margin-left: 300px;
+    margin-left: 400px;
 }
 
 .profile-detail__title{
@@ -51,8 +53,6 @@
     margin-top: 50px;
     display: grid;
     grid-gap: 50px;
-
-
 }
 
 .classes-detail{
