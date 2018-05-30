@@ -1,76 +1,115 @@
 //paragraphs, titles, to-do lists
-
 //PROFILE
-.page-title{
+.page-title {
     font-family: Helvetica;
     font-weight: lighter;
     padding-left: 150px;
+    margin-top: -1px;
     color: $brand-primary;
     position: fixed;
 }
 
-.page-subtitle{
+.page-subtitle {
     font-family: Helvetica;
     font-weight: lighter;
-    padding-left: 50px;
+    margin-top: 40px;
     color: $brand-primary;
-    margin-left: 700px;
-    //margin-top: -50px;
-    position: fixed;
+    background-color: white;
 }
 
-.page-header{
+.page-header {
     margin-top: 30px;
     position: fixed;
 }
 
-.profile-details{
+.profile-details {
     font-family: Helvetica;
     font-weight: lighter;
     float: left;
     margin-top: -80px;
-    margin-left: 300px;
+    margin-left: 400px;
 }
 
-.profile-detail__title{
+.profile-detail__title {
     font-weight: lighter;
 }
 
-.profile-detail--large{
+.profile-detail--large {
     font-size: 30px;
 }
 
-.profile-detail__info{
+.profile-detail__info {
     font-size: 14px;
 }
 
 //CLASSES
-.classes-details{
+.classes-details {
     float: left;
     margin-left: 200px;
-    margin-top: 50px;
+    margin-top: 140px;
     display: grid;
     grid-gap: 50px;
 
-
+    grid-template-columns: 300px 300px;
+    grid-row: auto auto;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
 }
 
-.classes-detail{
+.classes-detail {
+
+
+
     box-shadow: 1px 5px 18px #e0e0e0;
     padding: 10px;
-
-    &:hover{
+    border-radius: 5px;
+    &:hover {
         box-shadow: 1px 5px 18px #b4b4b4;
+        cursor: pointer;
     }
 }
 
-.todo-details{
-    float: left;
-    margin-top: 40px;
-    margin-left: 400px;
+.classes-detail__title{
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: $brand-secondary;
+    text-decoration: underline;
+
+    &:hover{
+        text-decoration: none;
+        cursor: pointer;
+    }
 }
 
-.todo-detail{
+.classes-detail__subtitle{
+    font-size: 15px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: $brand-primary;
+}
+
+.classes-detail__info{
+    font-size: 12px;
+    font-family: Helvetica;
+    font-weight: lighter;
+    color: $brand-primary;
+}
+
+.todo-details {
+    float: left;
+    margin-top: 130px;
+    margin-left: 200px;
+    overflow-y: scroll;
+    max-height: 618px;
+    border-bottom: 1px solid rgba(3, 3, 3, 0.2);
+}
+
+.todo-detail {
     margin-top: 30px;
+}
+
+.todo-detail__title{
+    color: $brand-secondary;
 }
 

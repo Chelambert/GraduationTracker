@@ -1,5 +1,4 @@
-
-.btn{
+.btn {
     background-color: white;
     border: 1px solid #2D3B45;
     color: #2D3B45;
@@ -11,14 +10,13 @@
     font-family: Helvetica;
     transition: all 0.3s ease 0s;
     display: inline-block;
-    margin-top: 50px;
-    margin-left: 975px;
+    margin-top: -50px;
+    margin-left: 1100px;
 
-    &:hover{
+
+    &:hover {
         background-color: #2D3B45;
         color: white;
         transition: all 0.3s ease 0s;
-
     }
 }
-
