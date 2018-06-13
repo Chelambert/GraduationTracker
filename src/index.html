@@ -1,108 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./partials/header.html')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Graduation Tracker</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+<main class="body">
 
-<body>
+    <header class="page-header">
+        <h1 class="page-title">Profile</h1>
+        <hr>
+    </header>
 
-    <div class="wrapper">
-
-        <nav class="main-nav">
-
-            <a href="index.html" class="nav-item nav-item--active">
-                <span class="nav__icon nav__icon--profile"></span>
-                <span class="nav__text">Profile</span>
-            </a>
-
-            <a href="classes.html" class="nav-item">
-                <span class="nav__icon nav__icon--class"></span>
-                <span class="nav__text">Classes</span>
-            </a>
-
-            <a href="todo.html" class="nav-item">
-                <span class="nav__icon nav__icon--todo"></span>
-                <span class="nav__text">To Do</span>
-            </a>
-
-            <a href="tracker.html" class="nav-item">
-                <span class="nav__icon nav__icon--tracker"></span>
-                <span class="nav__text">Tracker</span>
-            </a>
-
-            <a href="inbox.html" class="nav-item">
-                <span class="nav__icon nav__icon--inbox"></span>
-                <span class="nav__text">Inbox</span>
-            </a>
-
-        </nav>
-
-        <main class="body">
-
-            <header class="page-header">
-                <h1 class="page-title">Profile</h1>
-                <hr>
-            </header>
-
-
-            <div class="container">
-
-
-                <div class="profile-actions">
-                    <a href="" class="btn">Edit Profile</a>
-                </div>
-
-                <div class="profile-info">
-                    <img class="profile-img" src="images/Profile.jpg" alt="Chelsea" height="130">
-                </div>
+    <div class="container">
 
 
 
-                <section class="profile-details">
-
-                    <article class="profile-detail">
-                        <h2 class="profile-detail__title profile-detail--large">Chelsea Pontbriand</h2>
-                        <p class="profile-detail__info">Computer Science major</p>
-                        <p class="profile-detail__info">Graphic Design minor</p>
-                    </article>
-
-                    <article class="profile-detail">
-                        <h2 class="profile-detail__title">Contact</h2>
-                        <p class="profile-detail__info">Phone number: (561)777-7777</p>
-                        <p class="profile-detail__info">Email: pba@gmail.com</p>
-                    </article>
-
-                    <article class="profile-detail">
-                        <h2 class="profile-detail__title">Biography</h2>
-                        <p class="profile-detail__info">Chelsea is a Computer Science major and Graphic Design minor</p>
-                    </article>
-
-                    <article class="profile-detail">
-                        <h2 class="profile-detail__title">GPA</h2>
-                        <p class="profile-detail__info">4.0</p>
-                    </article>
-
-                    <article class="profile-detail">
-                        <h2 class="profile-detail__title">Credits Earned</h2>
-                        <p class="profile-detail__info">92</p>
-                    </article>
-
-                </section>
+        <div class="profile-info">
+            <img class="profile-img" src="images/Profile.jpg" alt="Chelsea" height="140">
 
 
+        </div>
 
-            </div>
+        <div class="profile-actions">
+            <a href="" class="btn">Edit Profile</a>
+        </div>
 
-        </main>
+        <section class="profile-details">
+
+
+            <article class="profile-detail">
+                <h2 class="profile-detail__title profile-detail--large">Chelsea Pontbriand</h2>
+                <p class="profile-detail__info">Computer Science major</p>
+                <p class="profile-detail__info">Graphic Design minor</p>
+            </article>
+
+            <article class="profile-detail">
+                <h2 class="profile-detail__title">Contact</h2>
+                <p class="profile-detail__info">Phone number: (561)777-7777</p>
+                <p class="profile-detail__info">Email: pba@gmail.com</p>
+            </article>
+
+            <article class="profile-detail">
+                <h2 class="profile-detail__title">Biography</h2>
+                <p class="profile-detail__info">Chelsea is a Computer Science major and Graphic Design minor</p>
+            </article>
+
+            <article class="profile-detail">
+                <h2 class="profile-detail__title">GPA</h2>
+                <p class="profile-detail__info">4.0</p>
+            </article>
+
+            <article class="profile-detail">
+                <h2 class="profile-detail__title">Credits Earned</h2>
+                <p class="profile-detail__info">92</p>
+            </article>
+
+        </section>
+
+
 
     </div>
 
-    <script src="scripts/main.js"></script>
-</body>
+</main>
 
-</html>
+@@include('./partials/footer.html')

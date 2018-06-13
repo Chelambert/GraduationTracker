@@ -3,7 +3,7 @@ const env = require('./gulp-env')();
 module.exports = () => {
     const config = {
         html: {
-            source: `${env.srcPath}/**/*.{html, htm, php}`,
+            source: `${env.srcPath}/**/*.html`,
             lintPath: `${env.srcPath}/`,
             build: `${env.buildPath}/`
         },

@@ -19,19 +19,15 @@
         background-color: darken($brand-primary, 10%);
         transition: all 0.3s ease 0s;
     }
-
-    // &--active{
-    //     background: white;
-    // }
 }
 
-.nav-item--active{
-    background: white;
+// .nav-item--active{
+//     background: white;
 
-    &:hover{
-        background: white;
-    }
-}
+//     &:hover{
+//         background: white;
+//     }
+// }
 
 .nav__icon {
     width: 100%;
@@ -41,6 +37,7 @@
     background: {
         image: url('../images/icon_classes_white.png');
         size: contain;
+        // size: 75%;
         repeat: no-repeat;
     }
     display: block;

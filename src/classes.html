@@ -1,126 +1,125 @@
-<!DOCTYPE html>
-<html lang="en">
+@@include('./partials/header.html')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Graduation Tracker</title>
-    <link rel="stylesheet" href="styles/styles.css">
-</head>
+<main class="body">
 
-<body>
+    <header class="page-header">
+        <h1 class="page-title">Classes</h1>
 
-    <div class="wrapper">
+        <hr>
+    </header>
 
-        <nav class="main-nav">
+    <div class="classes-details">
 
-            <a href="index.html" class="nav-item">
-                <span class="nav__icon nav__icon--profile"></span>
-                <span class="nav__text">Profile</span>
-            </a>
+        <div class="classes-detail classes-detail__box1">
+            <div class="rectangle rectangle--lightorange"></div>
+            <a class="classes-detail__title">Introductory Biology Lab</a>
+            <h2 class="classes-detail__subtitle">BIO-1041-OL</h2>
+            <p class="classes-detail__info">2017-2018 - Summer Semester</p>
+            <img class="Classes-detail__icon" src="images/icon_Notification.png" height=1 0px>
+        </div>
 
-            <a href="classes.html" class="nav-item nav-item--active">
-                <span class="nav__icon nav__icon--class"></span>
-                <span class="nav__text">Classes</span>
-            </a>
+        <div class="classes-detail classes-detail__box2">
+            <div class="rectangle rectangle--purple"></div>
+            <a class="classes-detail__title">Introductory Biology</a>
+            <h2 class="classes-detail__subtitle">BIO-1043-OL</h2>
+            <p class="classes-detail__info">2017-2018 - Summer Semester</p>
+            <img class="Classes-detail__icon" src="images/icon_Notification.png" height=1 0px>
+        </div>
 
-            <a href="todo.html" class="nav-item">
-                <span class="nav__icon nav__icon--todo"></span>
-                <span class="nav__text">To Do</span>
-            </a>
+        <div class="classes-detail classes-detail__box3">
+            <div class="rectangle rectangle--pink"></div>
+            <a class="classes-detail__title">Public Speaking</a>
+            <h2 class="classes-detail__subtitle">COM-1113-OL</h2>
+            <p class="classes-detail__info">2017-2018 - Summer Semester</p>
+            <img class="Classes-detail__icon" src="images/icon_Notification.png" height=1 0px>
+        </div>
 
-            <a href="tracker.html" class="nav-item">
-                <span class="nav__icon nav__icon--tracker"></span>
-                <span class="nav__text">Tracker</span>
-            </a>
-
-            <a href="inbox.html" class="nav-item">
-                <span class="nav__icon nav__icon--inbox"></span>
-                <span class="nav__text">Inbox</span>
-            </a>
-
-        </nav>
-
-        <main class="body">
-
-            <header class="page-header">
-                <h1 class="page-title">Classes</h1>
-                <h2 class="page-subtitle">To Do</h2>
-                <hr>
-            </header>
-
-            <div class="classes-details">
-
-                <div class="classes-detail classes-detail__box1">
-                    <img class="classes-detail__img">
-                    <h2 class="classes-detail__title">Introductory Biology Lab</h2>
-                    <h2 class="classes-detail__subtitle">BIO-1041-OL</h2>
-                    <p class="classes-detail__info">2017-2018 - Summer Semester</p>
-                </div>
-
-                <div class="classes-detail classes-detail__box2">
-                    <img class="classes-detail__img">
-                    <h2 class="classes-detail__title">Introductory Biology</h2>
-                    <h2 class="classes-detail__subtitle">BIO-1043-OL</h2>
-                    <p class="classes-detail__info">2017-2018 - Summer Semester</p>
-                </div>
-
-                <div class="classes-detail classes-detail__box3">
-                    <img class="classes-detail__img">
-                    <h2 class="classes-detail__title">Public Speaking</h2>
-                    <h2 class="classes-detail__subtitle">COM-1113-OL</h2>
-                    <p class="classes-detail__info">2017-2018 - Summer Semester</p>
-                </div>
-
-                <div class="classes-detail classes-detail__box4">
-                    <img class="classes-detail__img">
-                    <h2 class="classes-detail__title">Freedom in American Society</h2>
-                    <h2 class="classes-detail__subtitle">PLS-3003-OL</h2>
-                    <p class="classes-detail__info">2017-2018 - Summer Semester</p>
-                </div>
-
-            </div>
-
-            <div class="todo-details">
-
-                <div class="todo-detail todo__current">
-                    <a href="#" class="todo-detail__title">Turn in Faith Talk #2</a>
-                    <p class="todo-detail__info">Public Speaking</p>
-                    <p class="todo-detail__info">May 17 at 12:00pm</p>
-                </div>
-                <div class="todo-detail todo__current">
-                    <a href="#" class="todo-detail__title">Take 2.15 Quiz #2</a>
-                    <p class="todo-detail__info">Freedom in American Society</p>
-                    <p class="todo-detail__info">May 20 at 11:59pm</p>
-                </div>
-                <div class="todo-detail todo__current">
-                    <a href="#" class="todo-detail__title">Take Topic Selection</a>
-                    <p class="todo-detail__info">Public Speaking</p>
-                    <p class="todo-detail__info">May 20 at 11:59pm</p>
-                </div>
-                <div class="todo-detail todo__current">
-                    <a href="#" class="todo-detail__title">Take Exam #2</a>
-                    <p class="todo-detail__info">Freedom in American Society</p>
-                    <p class="todo-detail__info">May 20 at 11:59pm</p>
-                </div>
-                <div class="todo-detail todo__future">
-                    <a href="#" class="todo-detail__title">Take Informative Speaking Quiz</a>
-                    <p class="todo-detail__info">Public Speaking</p>
-                    <p class="todo-detail__info">May 20 at 11:59pm</p>
-                </div>
-
-                <a href="#" class="todo-detail todo__btn">
-                    <em>View More...</em>
-                </a>
-
-            </div>
-
-        </main>
+        <div class="classes-detail classes-detail__box4">
+            <div class="rectangle rectangle--darkorange"></div>
+            <a class="classes-detail__title">Freedom in American Society</a>
+            <h2 class="classes-detail__subtitle">PLS-3003-OL</h2>
+            <p class="classes-detail__info">2017-2018 - Summer Semester</p>
+            <img class="Classes-detail__icon" src="images/icon_Notification.png" height=1 0px>
+        </div>
 
     </div>
 
-    <script src="scripts/main.js"></script>
-</body>
+    <div class="todo-details">
 
-</html>
+        <h2 class="page-subtitle">Assignments</h2>
+
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Turn in Faith Talk #2</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 17 at 12:00pm</p>
+        </div>
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Take 2.15 Quiz #2</a>
+            <p class="todo-detail__info">Freedom in American Society</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Take Topic Selection</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Take Exam #2</a>
+            <p class="todo-detail__info">Freedom in American Society</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+        <div class="todo-detail todo__future">
+            <a href="#" class="todo-detail__title">Take Informative Speaking Quiz</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+
+        <a href="#" class="todo-detail todo-detail__title">
+            <em>View More...</em>
+        </a>
+
+        <h2 class="page-subtitle">Coming Up</h2>
+
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Turn in Faith Talk #2</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 17 at 12:00pm</p>
+        </div>
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Take 2.15 Quiz #2</a>
+            <p class="todo-detail__info">Freedom in American Society</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Take Topic Selection</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+        <div class="todo-detail todo__current">
+            <a href="#" class="todo-detail__title">Take Exam #2</a>
+            <p class="todo-detail__info">Freedom in American Society</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+        <div class="todo-detail todo__future">
+            <a href="#" class="todo-detail__title">Take Informative Speaking Quiz</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+
+        <a href="#" class="todo-detail todo-detail__title">
+            <em>View More...</em>
+        </a>
+
+        <h2 class="page-subtitle">Recent Feedback</h2>
+
+        <div class="todo-detail todo__future">
+            <a href="#" class="todo-detail__title">Take Informative Speaking Quiz</a>
+            <p class="todo-detail__info">Public Speaking</p>
+            <p class="todo-detail__info">May 20 at 11:59pm</p>
+        </div>
+
+    </div>
+
+</main>
+
+@@include('./partials/footer.html')
