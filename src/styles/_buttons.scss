@@ -1,17 +1,14 @@
 .btn {
     background-color: white;
-    border: 1px solid #2D3B45;
+    border: 1px solid #2D3B45; // convert these hexes to vars
     color: #2D3B45;
     padding: 15px 32px;
     border-radius: 4px;
     text-align: center;
-    font-size: 16px;
+    font-size: 16px; // use rems for font sizes
     text-decoration: none;
-    font-family: Helvetica;
     transition: all 0.3s ease 0s;
     display: inline-block;
-    margin-top: -50px;
-    margin-left: 1100px;
 
 
     &:hover {

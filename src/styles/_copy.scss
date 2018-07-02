@@ -3,7 +3,7 @@
 .page-title {
     font-family: Helvetica;
     font-weight: lighter;
-    padding-left: 150px;
+    //padding-left: 150px;
     margin-top: -1px;
     color: $brand-primary;
     position: fixed;
@@ -17,17 +17,10 @@
     background-color: white;
 }
 
-.page-header {
-    margin-top: 30px;
-    position: fixed;
-}
+
 
 .profile-details {
-    font-family: Helvetica;
-    font-weight: lighter;
-    float: left;
-    margin-top: -80px;
-    margin-left: 400px;
+
 }
 
 .profile-detail__title {
@@ -35,7 +28,7 @@
 }
 
 .profile-detail--large {
-    font-size: 30px;
+    font-size: 30px; // use rem here 1.2rem
 }
 
 .profile-detail__info {
@@ -123,7 +116,7 @@
 
 .todo-toggle{
     display: flex;
-    padding: 25px 150px 0px 90px;
+    //: 25px 150px 0px 90px;
     margin-left: 60px;
     margin-top: -10px;
     font-family: Helvetica;
@@ -194,4 +187,22 @@ input[type="radio"]{
     margin-left: 880px;
 }
 
+//TRACKER
 
+.tracker__container{
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+// .tracker-courses{
+//     display: flex;
+// }
+
+// .tracker-courses__current{
+//     flex-direction: column;
+// }
+
+.tracker-course{
+    border: 1px solid blue;
+    width: 85vw;
+}

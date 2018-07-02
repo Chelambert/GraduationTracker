@@ -1,10 +1,196 @@
 @@include('./partials/header.html')
 
-<main class="body">
-    <header class="page-header">
-        <h1 class="page-title">Tracker</h1>
-        <hr>
-    </header>
-</main>
+<main class="page">
 
-@@include('./partials/footer.html')
+    <header class="page__header">
+        <h1 class="page-title">Tracker</h1>
+    </header><!-- page__header -->
+
+    <div class="page__body">
+
+
+        <div class="page__desc">
+
+            <div class="something">
+                <h2 class="something__title">Currently Enrolled In:</h2>
+            </div>
+
+        </div><!-- /page__desc -->
+
+        <div class="page__details">
+            <!-- rethink naming on this one.. course tracker is nice.. but can this be more generic to be reusable? does this need to be reusable? its ok to not be.-->
+            <div class="course-tracker">
+                <!-- PUT TABLE DATA HERE -->
+                <!--
+                    rethink this section. what is this trying to be and is there a larger pattern that can be utilized here
+                    this is just a grid of information, wouldnt this be similar to the "table view" of the courses page?
+                -->
+                <h2 class="course-tracker__title">Future Enrollments:</h2>
+
+                <div class="course-tracker__subtitles">
+                    <h3 class="course-tracker__subtitle">Courses</h3>
+                    <h3 class="course-tracker__subtitle">Term</h3>
+                </div>
+
+                <div class="course-tracker course-tracker--future">
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">ART-1123-01 Drawing I</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">ART-2813-01 Art History I</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">CSC-4303-01 Wireless Applications Development</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">CSC-4804-01 Senior Internship</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">MAT-2804-02 Calculus I</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">PHY-1031-01L The Cosmos Laboratory</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+                    <div class="tracker-course">
+                        <a href=# class="tracker-course__name">PHY-1031-01 The Cosmos</a>
+                        <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div><!-- /page__details -->
+
+    </div><!-- /page__body -->
+
+</main><!-- /page -->
+
+
+
+
+
+
+<!--
+        <div class="course-tracker__subtitles">
+
+            <h3 class="course-tracker__subtitle">Course</h3>
+            <h3 class="course-tracker__subtitle">Term</h3>
+
+        </div>
+
+        <div class="course-tracker course-tracker__current">
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">BIO-1041-OL Introductory Biology Lab</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">BIO-1043-OL Introductory Biology</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">COM-1113-OL Public Speaking</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">PLS-3003-OL Freedom in American Society</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+
+        </div>
+
+
+
+        <h2 class="course-tracker__title">Past Enrollments:</h2>
+
+        <div class="course-tracker__subtitle">
+
+            <h3 class="course-tracker__subtitle">Courses</h3>
+            <h3 class="course-tracker__subtitle">Term</h3>
+
+        </div>
+
+        <div class="course-tracker course-tracker__past">
+
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">ART-1013-01 Foundations of Art and Design for Majors</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">ART-1022-01 Critical Thinking for Art Majors</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">ART-2213-01 Painting I</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">BIB-1003-06 Exploring the Bible</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">CPL-1000-02 Chapel Contemporary</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__names">CSC-2303-01 Programming II</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">CSC-3103-01 Computer Organization</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">CSC-3213-01 Software Engineering</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">CSC-3403-01 Operating Systems</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">CSC-3413-01 Computer Networking</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">CSC-3503-01 Graphics Programming</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">FYE-1001-EDU The First Year Experience</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">HHP-1061-05 Lifetime Fitness</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">HUM-1023-09 Humanities II</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">HUM-1033-01 Humanities III</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">MAT-1863-01 Trigonometry and Analytical Geometry</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+            <div class="tracker-course">
+                <a href=# class="tracker-course__name">WOR-2017-SP Workship Requirement</a>
+                <p class="tracker-course__term">2017-2018 - Summer Semester</p>
+            </div>
+
+        </div>
+
+        <div class="course-tracker__details">
+
+        </div>
+
+
+    </div> -->

@@ -1,62 +1,61 @@
 @@include('./partials/header.html')
 
-<main class="body">
+<main class="page">
 
-    <header class="page-header">
+    <header class="page__header">
         <h1 class="page-title">Profile</h1>
-        <hr>
-    </header>
+    </header><!-- page__header -->
 
-    <div class="container">
-
+    <div class="page__body">
 
 
-        <div class="profile-info">
-            <img class="profile-img" src="images/Profile.jpg" alt="Chelsea" height="140">
+        <div class="page__desc">
 
+            <div class="profile">
+                <img class="profile__img" src="images/Profile.jpg" alt="Chelsea">
 
-        </div>
+                <div class="actions">
+                    <a href="#" class="btn">Edit Profile</a>
+                </div><!-- /actions -->
+            </div><!-- /profile-info -->
 
-        <div class="profile-actions">
-            <a href="" class="btn">Edit Profile</a>
-        </div>
+        </div><!-- /page__desc -->
 
-        <section class="profile-details">
+        <div class="page__details">
+            <section class="profile-details">
 
+                <article class="profile-detail">
+                    <h2 class="profile-detail__title profile-detail--large">Chelsea Pontbriand</h2>
+                    <p class="profile-detail__info">Computer Science major</p>
+                    <p class="profile-detail__info">Graphic Design minor</p>
+                </article>
 
-            <article class="profile-detail">
-                <h2 class="profile-detail__title profile-detail--large">Chelsea Pontbriand</h2>
-                <p class="profile-detail__info">Computer Science major</p>
-                <p class="profile-detail__info">Graphic Design minor</p>
-            </article>
+                <article class="profile-detail">
+                    <h2 class="profile-detail__title">Contact</h2>
+                    <p class="profile-detail__info">Phone number: (561)777-7777</p>
+                    <p class="profile-detail__info">Email: pba@gmail.com</p>
+                </article>
 
-            <article class="profile-detail">
-                <h2 class="profile-detail__title">Contact</h2>
-                <p class="profile-detail__info">Phone number: (561)777-7777</p>
-                <p class="profile-detail__info">Email: pba@gmail.com</p>
-            </article>
+                <article class="profile-detail">
+                    <h2 class="profile-detail__title">Biography</h2>
+                    <p class="profile-detail__info">Chelsea is a Computer Science major and Graphic Design minor</p>
+                </article>
 
-            <article class="profile-detail">
-                <h2 class="profile-detail__title">Biography</h2>
-                <p class="profile-detail__info">Chelsea is a Computer Science major and Graphic Design minor</p>
-            </article>
+                <article class="profile-detail">
+                    <h2 class="profile-detail__title">GPA</h2>
+                    <p class="profile-detail__info">4.0</p>
+                </article>
 
-            <article class="profile-detail">
-                <h2 class="profile-detail__title">GPA</h2>
-                <p class="profile-detail__info">4.0</p>
-            </article>
+                <article class="profile-detail">
+                    <h2 class="profile-detail__title">Credits Earned</h2>
+                    <p class="profile-detail__info">92</p>
+                </article>
 
-            <article class="profile-detail">
-                <h2 class="profile-detail__title">Credits Earned</h2>
-                <p class="profile-detail__info">92</p>
-            </article>
+            </section><!-- /profile-details -->
+        </div><!-- /page__details -->
 
-        </section>
+    </div><!-- /page__body -->
 
-
-
-    </div>
-
-</main>
+</main><!-- /page -->
 
 @@include('./partials/footer.html')
