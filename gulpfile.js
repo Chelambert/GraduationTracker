@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const config = require('./gulp-config')();
 const env = require('./gulp-env')();
+const del = require('del');
 const browserSync = require('browser-sync').create();
 const runSequence = require('run-sequence').use(gulp);
 const $ = require('gulp-load-plugins')({ lazy: true });
@@ -12,10 +13,21 @@ gulp.task('help', $.taskListing);
 
 ///////////////
 // Global Jobs
-gulp.task('__start-local__', ['task:compile-styles', 'task:compile-scripts', 'task:compile-html', 'task:compile-images', 'task:start-watch']);
-gulp.task('__compile-assets__', ['task:compile-styles', 'task:compile-scripts', 'task:compile-html', 'task:compile-images']);
-gulp.task('__lint-everything__', ['_lint-styles_', '_lint-feature-styles_', '_lint-scripts_']);
+gulp.task('__start-local__', () => {
+    runSequence('clean:build', 'task:compile-styles', 'task:compile-scripts', 'task:compile-html', 'task:compile-images', 'task:start-watch');
+});
+gulp.task('__compile-assets__', () => {
+    runSequence('clean:build', 'task:compile-styles', 'task:compile-scripts', 'task:compile-html', 'task:compile-images');
+});
+gulp.task('__lint-everything__', () => {
+    runSequence('_lint-styles_', '_lint-scripts_');
+});
 
+////////////////
+// Local Tasks
+gulp.task('clean:build', () => {
+    return del([env.buildPath]);
+});
 ////////////////
 // Local Tasks
 gulp.task('task:compile-styles', () => {

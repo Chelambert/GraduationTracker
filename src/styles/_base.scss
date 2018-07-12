@@ -11,51 +11,56 @@ body {
     margin: 0;
     padding: 0;
     font-size: 16px;
+    font-family: $font;
 }
 
-.wrapper {
-    display: flex;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+    font-weight: lighter;
 }
 
-// .todo__container{
-//     width: 85vw;
-//     height: 25vh;
-//     margin: 150px 0px 0px 150px;
-//     // border: 2px solid $brand-secondary;
-//     border-radius: 10px;
-//     box-shadow: 1px 5px 18px #e0e0e0;
-//     position: fixed;
-// }
-
-///// MOVE TO PAGE.SCSS
-.page {
-    min-height: 100vh;
-    width: calc( 100% - 10vw); // use nav variable here
-    position: relative;
-    left: 10vw;
+p {
+    font-weight: lighter;
+    font-size: 1rem;
 }
 
-.page__header {
-    background: #eee; // make a var and use
-    position: fixed;
-    width: calc(100% - 10vw); // use nav variable here
-    left: 10vw; // make this a variable
-    height: 15vh; // make this a variable
-    z-index: 10;
+a {
+    font-weight: lighter;
 }
 
-.page__body {
+li {
+    font-weight: lighter;
+}
+
+table {
     width: 100%;
-    min-height: calc(100% - 15vh); // use the header variale here
-    position: relative;
-    padding: 1.25rem; // make this a variable and use every where
-    // you can use $padding/2 or $padding*2 or just $padding
-    top: 15vh; // use the header variale here
-    display: flex;
+    border-collapse: collapse;
 }
-.page__desc {
-    flex: 1;
+
+tr,
+th {
+    letter-spacing: 1px;
+    font-weight: lighter;
+    border: 1px solid $dark-gray;
+    text-align: left;
+    padding: $padding;
 }
-.page__details {
-    flex: 3;
+
+tr:nth-child(even) {
+    background-color: $off-white;
+}
+
+@mixin link {
+    color: $brand-secondary;
+    font-size: $font-size-base;
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+        cursor: pointer;
+    }
 }

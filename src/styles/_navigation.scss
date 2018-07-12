@@ -1,95 +1,68 @@
-.main-nav{
-    width: 10vw;
+.nav {
+    width: $nav-width;
+    background-color: $brand-primary;
     height: 100vh;
     list-style-type: none;
-    background-color: #2d3b45;
     text-align: center;
     position: fixed;
 }
 
-.nav-item {
+.nav__item {
     flex: 1;
-    color: white;
+    color: $brand-tertiary; // use variable
     display: block;
-    padding: 0.25rem 1.75rem;
-    transition: all 0.3s ease 0s;
-
-    &:hover{
-        text-decoration: none;
+    padding: $nav-item-padding; // use padding variable
+    transition: $transition;
+    &:hover {
         background-color: darken($brand-primary, 10%);
-        transition: all 0.3s ease 0s;
+        text-decoration: none;
     }
 }
-
-// .nav-item--active{
-//     background: white;
-
-//     &:hover{
-//         background: white;
-//     }
-// }
 
 .nav__icon {
     width: 100%;
     padding-bottom: 100%;
     margin: 1rem 0;
     max-height: 25px;
+    display: block;
     background: {
         image: url('../images/icon_classes_white.png');
         size: contain;
-        // size: 75%;
         repeat: no-repeat;
     }
-    display: block;
-
-    &:hover{
+    &:hover {
         text-decoration: none;
     }
-
-    .nav-item--active &{
+    .nav-item--active & {
         background-image: url('../images/icon_classes_blue.png');
     }
-
     &--profile {
         border-radius: 50%;
         background-image: url('../images/Profile.jpg');
-        .nav-item--active &{
+        .nav-item--active & {
             background-image: url('../images/Profile.jpg');
-            border: 2px solid lightgray;
+            border: 2px solid $border-color-small; //use variable
         }
-    }
+    } // TODO :
+    // Convert this to a sass map and loop everything
 
-    &--todo {
-        background-image: url('../images/icon_todo_white.png');
-        .nav-item--active &{
-            background-image: url('../images/icon_todo_blue.png');
-        }
-    }
-
-    &--tracker {
-        background-image: url('../images/icon_tracker_white.png');
-        .nav-item--active &{
-            background-image: url('../images/icon_tracker_blue.png');
-        }
-    }
-
-    &--inbox {
-        background-image: url('../images/icon_inbox_white.png');
-        .nav-item--active &{
-            background-image: url('../images/icon_inbox_blue.png');
+    @each $class, $img in $navs {
+        &--#{$class} {
+            background-image: url('../images/#{$img}_white.png');
+            .nav-item--active & {
+                background-image: url('../images/#{$img}_blue.png');
+            }
         }
     }
 }
 
-.nav__text{
-    font-size: 14px;
-    font-family: helvetica;
-    font-weight: lighter;
-    .nav-item--active &{
+.nav__text {
+    .nav-item--active & {
         color: $brand-secondary;
     }
 }
 
 .nav__icon--profile {
-    border: 2px solid white;
+    border: 2px solid $brand-tertiary; // use variable
+    filter: saturate(0%);
 }

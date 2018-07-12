@@ -1,0 +1,77 @@
+//CLASSES
+.classes-details {
+    margin-left: $margin;
+    display: grid;
+    grid-gap: 60px;
+    grid-template-columns: 300px 300px;
+}
+
+.classes-detail {
+    box-shadow: $box-shadow-light;
+    padding: 10px;
+    border-radius: 5px;
+    &:hover {
+        box-shadow: $box-shadow-dark;
+        cursor: pointer;
+    }
+}
+
+.classes-img {
+    height: 130px;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+// consider a better naming convention for these
+// __box1 does not mean anything to anyone other than you.
+// maybe utilize your school subjects to give them a label
+.classes-img__bioLab {
+    background-color: $img-bioLab; // use a variable for all of them
+}
+
+.classes-img__bio {
+    background-color: $img-bio;
+}
+
+.classes-img__publicSpeaking {
+    background-color: $img-publicSpeaking;
+}
+
+.classes-img__freedoms {
+    background-color: $img-freedoms;
+}
+
+.classes-detail__title {
+    @include link;
+}
+
+.classes-detail__subtitle {
+    color: $brand-primary;
+    font-size: $font-size-base - .15rem; // use variable
+}
+
+.classes-detail__info {
+    color: $brand-primary;
+    font-size: $font-size-base - .15rem; // use variable
+}
+
+.todo-details {
+    margin-left: 10vw;
+    overflow-y: scroll;
+    max-height: 618px;
+    border-bottom: 1px solid $light-gray; // convert rgba to variable.. and in sass you can do rgba($color, 0.3);
+}
+
+.todo-detail {
+    margin-top: $margin; // is there a variable for this
+}
+
+.todo-detail__title {
+    color: $brand-secondary;
+    width: 100%;
+    // height: 60px; // is there a reason for a specific height? what happens with there is more or less information in this container.
+    top: 0;
+    &:hover {
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,50 @@
+.filter {
+    margin: $margin;
+    padding-left: $padding;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter__lists {
+    box-shadow: $box-shadow-light;
+}
+
+.filter__item {
+    list-style-type: none;
+}
+
+.filter__list1,
+.filter__list2,
+.filter__list3 {
+    flex-direction: column;
+    font-size: $font-size-base + .25rem;
+}
+
+input[type="checkbox"] {
+    margin-left: -2em;
+}
+
+input[type="radio"] {
+    margin-left: -2em;
+}
+
+.result {
+    display: flex;
+    float: left;
+}
+
+.result__title {
+    font-weight: normal;
+}
+
+.result__details {
+    margin: $margin;
+    overflow-y: auto;
+    max-height: $todo-height;
+    width: $width;
+    float: left;
+    border-bottom: 2px solid $light-gray;
+}
+
+
+

@@ -1,0 +1,23 @@
+.tracker {
+    box-shadow: $box-shadow-light;
+    margin: $margin;
+    padding: $padding;
+}
+
+.courses {
+    margin: $margin;
+    padding: $padding;
+    max-height: $table-height;
+    overflow: auto;
+}
+
+.courses__title,
+.tracker__title,
+.row__desc {
+    font-weight: normal;
+}
+
+.tracker__data--link {
+    @include link;
+}
+
