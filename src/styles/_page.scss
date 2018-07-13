@@ -1,0 +1,45 @@
+.page {
+    width: calc(100% - #{$nav-width});
+    left: $nav-width;
+    min-height: 100vh;
+    position: relative;
+}
+
+.page-title {
+    color: $brand-primary;
+    padding: $padding;
+    position: fixed;
+}
+
+.page-subtitle {
+    color: $brand-primary;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+.page__header {
+    border-bottom: 2px solid $light-gray;
+    background-color: $header-opacity;
+    width: 100%;
+    left: $nav-width;
+    height: $header-height;
+    position: fixed;
+    z-index: 10;
+}
+
+.page__body {
+    min-height: calc(100% - $header-height);
+    padding: $padding;
+    top: $header-height;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.page__desc {
+    flex: 1;
+}
+
+.page__details {
+    flex: 3;
+}

@@ -8,7 +8,7 @@ module.exports = () => {
             build: `${env.buildPath}/`
         },
         styles: {
-            source: `${env.srcPath}/styles/**/*.{scss, sass, css}`,
+            source: `${env.srcPath}/styles/**/*.{scss,sass,css}`,
             lintPath: `${env.srcPath}/styles/`,
             build: `${env.buildPath}/styles/`
         },
@@ -18,7 +18,7 @@ module.exports = () => {
             build: `${env.buildPath}/scripts/`
         },
         images: {
-            source: `${env.srcPath}/images/**/*.{jpg, JPG, jpeg, JPEG, png, PNG, gif, GIF, svg}`,
+            source: `${env.srcPath}/images/**/*.{jpg,JPG,jpeg,JPEG,png,PNG,gif,GIF,svg}`,
             build: `${env.buildPath}/images/`
         },
         browserSync: {

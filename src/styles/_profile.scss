@@ -1,0 +1,12 @@
+.profile-detail--large {
+    font-size: $title-medium; // use variable here
+}
+
+.profile__img {
+    max-height: 150px;
+    border-radius: 50%;
+    border: 2px solid $border-color-small; // use variable here
+    filter: saturate(0%);
+    margin-left: 3.3rem;
+    margin-top: $margin;
+}

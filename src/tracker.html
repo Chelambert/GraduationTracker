@@ -1,10 +1,234 @@
 @@include('./partials/header.html')
 
-<main class="body">
-    <header class="page-header">
-        <h1 class="page-title">Tracker</h1>
-        <hr>
+<main class="page">
+
+    <header class="page__header">
+        <h1 class="page-title">Graduation Tracker</h1>
     </header>
+    <!-- page__header -->
+
+    <div class="page__body">
+
+        <div class="page__desc">
+
+            <div class="tracker">
+
+                <h2 class="tracker__title">Student Info: </h2>
+                <h3 class="tracker__subtitle">Classification - </h3>
+                <p class="tracker__data">Senior</p>
+
+                <h3 class="tracker__subtitle">Credits Needed - </h3>
+                <p class="tracker__data">40</p>
+
+                <h3 class="tracker__subtitle">Credits Earned - </h3>
+                <p class="tracker__data">102</p>
+
+                <h3 class="tracker__subtitle">GPA</h3>
+                <p class="tracker__data">4.0</p>
+
+                <h3 class="tracker__subtitle">Major Requirements Met - </h3>
+                <p class="tracker__data">No</p>
+
+                <h3 class="tracker__subtitle">Minor Requirements Met - </h3>
+                <p class="tracker__data">No</p>
+
+                <h3 class="tracker__subtitle">Gen Ed Requirements Met - </h3>
+                <p class="tracker__data">Yes</p>
+
+                <h3 class="tracker__subtitle">Degree in Process - </h3>
+                <p class="tracker__data">Bachelor of Science</p>
+
+                <h3 class="tracker__subtitle">Links - </h3>
+                <a href="https://my.pba.edu/ICS/Applications/CRM/Reports/etaeaonlkylaoxbgcq2ivzcn12_54_58_PM_AdvisingWorksheet.pdf" target="blank" class="tracker__data--link">Advising Worksheet</a>
+                <a href="https://my.pba.edu/ics/staticpages/forms/registrar/application-graduation.aspx" target="blank" class="tracker__data--link">Graduation Application</a>
+
+            </div>
+            <!-- /tracker -->
+        </div>
+        <!-- /page__desc -->
+
+        <div class="page__details">
+
+            <div class="courses">
+
+                <div class="courses__current">
+
+                    <h2 class="courses__title">Current Enrollments:</h2>
+                    <table class="courses__table">
+                        <tr>
+                            <th class="row__desc">Course Name</th>
+                            <th class="row__desc">Term</th>
+                            <th class="row__desc">Score</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">ART-1123-01 Drawing I</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">MAT-2804-01 Calculus I</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">PHY-1031-01L The Cosmos Laboratory</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">PHY-1031-01 The Cosmos</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-4804-01 Senior Internship</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-4303-01 Wireless Applications Development</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">ART-2813-01 Art History I</th>
+                            <th class="row__term">2018-2019 Fall Semester</th>
+                            <th class="row__score">N/A</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="courses__past">
+
+                    <h2 class="courses__title">Past Enrollments:</h2>
+                    <table class="courses__table">
+                        <tr>
+                            <th class="row__desc">Course Name</th>
+                            <th class="row__desc">Term</th>
+                            <th class="row__desc">Score</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">ART-1013 Foundations of Art & Design for Majors</th>
+                            <th class="row__term">2017-2018 Fall Semester</th>
+                            <th class="row__score">A+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">ART-1022 Critical Thinking for Art Majors</th>
+                            <th class="row__term">2017-2018 Spring Semester</th>
+                            <th class="row__score">A+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">ART-2213 Painting I</th>
+                            <th class="row__term">2017-2018 Spring Semester</th>
+                            <th class="row__score">A+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">BIB-1003 Exploring the Bible</th>
+                            <th class="row__term">2016-2017 Spring Semester</th>
+                            <th class="row__score">B+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-2303 Programming II</th>
+                            <th class="row__term">2016-2017 Spring Semester</th>
+                            <th class="row__score">B+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-2403 Algorithm Design & Analysis</th>
+                            <th class="row__term">2016-2017 Spring Semester</th>
+                            <th class="row__score">B</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-2603 Database Systems</th>
+                            <th class="row__term">2016-2017 Spring Semester</th>
+                            <th class="row__score">A</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-2002 Programming III</th>
+                            <th class="row__term">2017-2018 Fall Semester</th>
+                            <th class="row__score">A+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-3103 Computer Organization</th>
+                            <th class="row__term">2017-2018 Fall Semester</th>
+                            <th class="row__score">B</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-3213 Software Engineering</th>
+                            <th class="row__term">2017-2018 Fall Semester</th>
+                            <th class="row__score">B+</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-3403 Operating Systems</th>
+                            <th class="row__term">2017-2018 Spring Semester</th>
+                            <th class="row__score">A-</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC 3413 Computer Networking</th>
+                            <th class="row__term">2017-2018 Spring Semester</th>
+                            <th class="row__score">B</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC 3503 Graphics Programming</th>
+                            <th class="row__term">2017-2018 Spring Semester</th>
+                            <th class="row__score">B-</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">MAT 1863 Trigonometry & Analytical Geometry</th>
+                            <th class="row__term">2017-2018 Spring Semester</th>
+                            <th class="row__score">B-</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="courses__future">
+                    <h2 class="courses__title">Future Enrollments:</h2>
+                    <table class="courses__table">
+                        <tr>
+                            <th class="row__desc">Course Name</th>
+                            <th class="row__desc">Term</th>
+                            <th class="row__desc">Credits</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">BIB-4153 Christian Values and Biblical Faith</th>
+                            <th class="row__term">Fall/Spring/Summer</th>
+                            <th class="row__credits">3</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">MAT-2904 Calculus II</th>
+                            <th class="row__term">Fall/Spring/Summer</th>
+                            <th class="row__credits">4</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">CSC-3323 Web Programming</th>
+                            <th class="row__term">Fall/Spring</th>
+                            <th class="row__credits">3</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">ART-2523 Graphic Design I</th>
+                            <th class="row__term">Spring</th>
+                            <th class="row__credits">3</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">Computer Science Elective</th>
+                            <th class="row__term">Fall/Spring</th>
+                            <th class="row__credits">3</th>
+                        </tr>
+                        <tr>
+                            <th class="row__name">Computer Science Elective</th>
+                            <th class="row__term">Fall/Spring</th>
+                            <th class="row__credits">3</th>
+                        </tr>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+        <!-- /page__details -->
+    </div>
+    <!-- /page__body -->
 </main>
+<!-- /page -->
 
 @@include('./partials/footer.html')
