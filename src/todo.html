@@ -9,31 +9,51 @@
 
         <div class="page__desc">
 
-            <div class="filter filter__lists">
+            <div class="filter-lists">
 
-                <div class="filter filter__list1">
-                    <input type="radio" checked="checked" name="radioBtn">
-                    <li class="filter__item">Present</li>
-                    <input type="radio" name="radioBtn">
-                    <li class="filter__item">Future</li>
-                    <input type="radio" name="radioBtn">
-                    <li class="filter__item">Past</li>
+                <div class="filter-list">
+                    <label>
+                        <input type="radio" checked="checked" name="radioBtn">
+                        <span>Present</span>
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radioBtn">
+                        <span>Future</span>
+                    </label>
+                    <label>
+                        <input type="radio" checked="checked" name="radioBtn">
+                        <span>Past</span>
+                    </label>
                 </div>
-                <div class="filter filter__list2">
-                    <input type="checkbox">
-                    <li class="filter__item">Assignments</li>
-                    <input type="checkbox">
-                    <li class="filter__item">Quizzes</li>
-                    <input type="checkbox">
-                    <li class="filter__item">Exams</li>
+
+                <div class="filter-list">
+                    <label>
+                        <input type="checkbox">
+                        <span>Assignments</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Quizzes</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Exams</span>
+                    </label>
                 </div>
-                <div class="filter filter__list3">
-                    <input type="checkbox">
-                    <li class="filter__item">Graded</li>
-                    <input type="checkbox">
-                    <li class="filter__item">Not Graded</li>
-                    <input type="checkbox">
-                    <li class="filter__item">Recent Feedback</li>
+
+                <div class="filter-list">
+                    <label>
+                        <input type="checkbox">
+                        <span>Graded</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Not Graded</span>
+                    </label>
+                    <label>
+                        <input type="checkbox">
+                        <span>Recent Feedback</span>
+                    </label>
                 </div>
 
             </div>
@@ -41,11 +61,11 @@
 
             <div class="result">
 
-                <h2 class="result__title">Present</h2>
+                <div class="result__present">
 
-                <div class="result__details">
-                    <!-- todo-details todo-details--present -->
-                    <div class="result__details--present">
+                    <h2 class="result__title">Present</h2>
+
+                    <div class="result__details">
 
                         <div class="todo-detail">
                             <a href="#" class="todo-detail__title">Turn in 6.7 Assignment | Law</a>
@@ -74,119 +94,119 @@
                             <p class="todo-detail__info">June 17 at 11:59pm</p>
                         </div>
                         <!--/todo-detail-->
+                    </div>
+                    <!--result__details-->
+                </div>
+                <!--result__present-->
+
+                <div class="result__future">
+
+                    <h2 class="result__title">Future</h2>
+
+                    <div class="result__details">
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in 6.7 Assignment | Law</a>
+                            <p class="todo-detail__info">Freedom in American Society</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Persuasive Claims</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Take 6.9 Quiz 6</a>
+                            <p class="todo-detail__info">Freedom in American Society</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
 
                     </div>
-                    <!--result__present-->
+                    <!--result__details-->
+                </div>
+                <!--result__future-->
+
+                <div class="result__past">
+
+                    <h2 class="result__title">Past</h2>
+
+                    <div class="result__details">
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in 6.7 Assignment | Law</a>
+                            <p class="todo-detail__info">Freedom in American Society</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Persuasive Claims</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Take 6.9 Quiz 6</a>
+                            <p class="todo-detail__info">Freedom in American Society</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                        <div class="todo-detail">
+                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
+                            <p class="todo-detail__info">Public Speaking</p>
+                            <p class="todo-detail__info">June 17 at 11:59pm</p>
+                        </div>
+
+                    </div>
+                    <!--result__past-->
 
                 </div>
                 <!--result__details-->
-
-                <h2 class="result__title">Future</h2>
-
-                <div class="result__details">
-                    <div class="result__details--future">
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in 6.7 Assignment | Law</a>
-                            <p class="todo-detail__info">Freedom in American Society</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Persuasive Claims</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Take 6.9 Quiz 6</a>
-                            <p class="todo-detail__info">Freedom in American Society</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                    </div>
-                    <!--result__future-->
-
-                </div>
-                <!--result__details-->
-
-                <h2 class="result__title">Past</h2>
-
-                <div class="result__details">
-                    <div class="result__details--past">
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in 6.7 Assignment | Law</a>
-                            <p class="todo-detail__info">Freedom in American Society</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Persuasive Claims</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Take 6.9 Quiz 6</a>
-                            <p class="todo-detail__info">Freedom in American Society</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-
-                        <div class="todo-detail">
-                            <a href="#" class="todo-detail__title">Turn in Eliminating Clutter</a>
-                            <p class="todo-detail__info">Public Speaking</p>
-                            <p class="todo-detail__info">June 17 at 11:59pm</p>
-                        </div>
-                    </div>
-                </div>
-                <!--result__past-->
-
             </div>
-            <!--result__details-->
-
+            <!--result__past-->
         </div>
         <!--page__desc-->
 

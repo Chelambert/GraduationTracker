@@ -16,8 +16,8 @@
 .filter__list1,
 .filter__list2,
 .filter__list3 {
-    flex-direction: column;
     font-size: $font-size-base + .25rem;
+    flex-direction: column;
 }
 
 input[type="checkbox"] {
@@ -30,21 +30,24 @@ input[type="radio"] {
 
 .result {
     display: flex;
-    float: left;
+    justify-content: center;
 }
 
 .result__title {
+    margin-left: $margin;
     font-weight: normal;
 }
 
 .result__details {
-    margin: $margin;
-    overflow-y: auto;
-    max-height: $todo-height;
+    margin-left: $margin;
+    margin-right: $margin;
+    margin-top: $margin;
     width: $width;
-    float: left;
+    max-height: $todo-height;
     border-bottom: 2px solid $light-gray;
+    overflow-y: auto;
 }
+
 
 
 
