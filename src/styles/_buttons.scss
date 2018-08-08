@@ -1,22 +1,19 @@
 .btn {
-    background-color: white;
-    border: 1px solid #2D3B45;
-    color: #2D3B45;
-    padding: 15px 32px;
+    font-family: $font;
+    padding: $button-padding;
+    border: 1px solid $brand-primary;
+    color: $brand-primary;
+    margin: 3rem; // use a var
+    background-color: white; // use a var
     border-radius: 4px;
     text-align: center;
-    font-size: 16px;
+    font-size: 1.2rem; // use a var here
     text-decoration: none;
-    font-family: Helvetica;
-    transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s; // use new var here
     display: inline-block;
-    margin-top: -50px;
-    margin-left: 1100px;
-
 
     &:hover {
-        background-color: #2D3B45;
+        background-color: $brand-primary;
         color: white;
-        transition: all 0.3s ease 0s;
     }
 }

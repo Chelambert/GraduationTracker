@@ -1,2 +1,61 @@
-$brand-primary: #2D3B45;
-$brand-secondary: #67a4c4;
+// Colors
+$navy-blue: #2D3B45;
+$light-blue: #67a4c4;
+$off-white: #e5e5e5;
+$off-black: #121212;
+$white: #fff;
+$light-gray: rgb(219, 219, 219);
+$dark-gray: #b4b4b4;
+$purple: #6b5b95;
+$pink: #d64161;
+$yellow: #feb236;
+$orange: #ff7b25;
+
+
+// Brand Colors
+$brand-primary: $navy-blue;
+$brand-secondary: $light-blue;
+$brand-tertiary: $white;
+
+
+
+// Typography
+$font: 'Helvetica';
+$font-size-base: 1rem;
+$title-large: $font-size-base * 2;
+$title-medium: $font-size-base * 1.5;
+
+$text-color-light: $off-white;
+$text-color-dark: $off-black;
+
+// General
+$transition: all 0.3s ease;
+
+$padding: 1.25rem;
+$margin: $padding * 2;
+
+$button-padding: 15px 32px;
+
+$box-shadow-light: 1px 5px 18px $light-gray;
+$box-shadow-dark: 1px 5px 18px $dark-gray;
+
+$width: 18vw;
+$nav-width: 120px;
+$nav-item-padding: 5px 30px 10px 30px;
+$border-color-small: $light-gray;
+
+
+$header-opacity: rgba(255, 255, 255, 0.85);
+$header-height: 120px;
+
+$todo-height: 65vh;
+$table-height: 111vh;
+
+// Images
+$img-bioLab: $yellow;
+$img-bio: $purple;
+$img-publicSpeaking: $pink;
+$img-freedoms: $orange;
+
+
+$navs: (todo: icon_todo, tracker: icon_tracker, inbox: icon_inbox);

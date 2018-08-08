@@ -1,0 +1,46 @@
+{
+  "student": {
+    "name": {
+      "first": "Chelsea",
+      "last": "Pontbriand"
+    },
+    "profile": {
+      "gpa": 4
+    }
+  },
+  "todos": [
+    {
+      "id": 1,
+      "title": "first todo",
+      "desc": "do this stuff",
+      "category": "history",
+      "dueDate": "2018-07-13",
+      "completed": false
+    },
+    {
+      "title": "Exam 15",
+      "desc": "Chapter 15",
+      "category": "genEd",
+      "dueDate": "2019-01-19",
+      "completed": "no",
+      "id": 2
+    },
+    {
+      "title": "sra",
+      "desc": "vrawv",
+      "category": "major",
+      "dueDate": "0035-03-24",
+      "completed": "no",
+      "id": 3
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "category": "math",
+      "desc": "gonna learn math 101",
+      "title": "math 101",
+      "credits": 3
+    }
+  ]
+}
