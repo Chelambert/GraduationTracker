@@ -1,0 +1,28 @@
+@@include('./partials/header.html')
+
+<main class="page">
+    <header class="page__header">
+        <h1 class="page-title">Student Information</h1>
+    </header>
+    <div class="page__body">
+        <form>
+            <div class="student">
+
+                <label for="fname" class="form__title">First name:</label>
+                <input id="fname" class="form__input" type="text" name="studentFirst">
+
+                <label for="lname" class="form__title">Last name:</label>
+                <input id="lname" class="form__input" type="text" name="studentLast">
+
+                <label for="gpa"  class="form__title">GPA:</label>
+                <input id="gpa" class="form__input" type="text" name="gpa">
+
+                <button  type="submit" value="Submit" class="btn">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+</main>
+<script src="scripts/student_data_input.js"></script>
+@@include('./partials/footer.html')
