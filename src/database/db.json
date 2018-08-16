@@ -18,20 +18,44 @@
       "completed": false
     },
     {
-      "title": "Exam 15",
-      "desc": "Chapter 15",
-      "category": "genEd",
-      "dueDate": "2019-01-19",
-      "completed": "no",
+      "title": "Exam 3",
+      "desc": "chapter 3",
+      "category": "minor",
+      "dueDate": "2018-08-22",
+      "completed": false,
       "id": 2
     },
     {
-      "title": "sra",
-      "desc": "vrawv",
-      "category": "major",
-      "dueDate": "0035-03-24",
-      "completed": "no",
+      "title": "Exam 5",
+      "desc": "chapter 5",
+      "category": "genEd",
+      "dueDate": "2018-08-25",
+      "completed": false,
       "id": 3
+    },
+    {
+      "title": "Exam 6",
+      "desc": "chapter 6",
+      "category": "genEd",
+      "dueDate": "2018-08-29",
+      "completed": true,
+      "id": 4
+    },
+    {
+      "title": "The Gardens Mall",
+      "desc": "fwef",
+      "category": "math",
+      "dueDate": "2018-08-03",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "title": "today",
+      "desc": "llllll",
+      "category": "minor",
+      "dueDate": "2018-08-14",
+      "completed": false,
+      "id": 6
     }
   ],
   "classes": [
