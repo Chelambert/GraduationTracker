@@ -1,0 +1,77 @@
+{
+  "student": {
+    "name": {
+      "first": "Chelsea",
+      "last": "Pontbriand"
+    },
+    "profile": {
+      "gpa": 4
+    }
+  },
+  "todos": [
+    {
+      "id": 1,
+      "title": "first todo",
+      "desc": "do this stuff",
+      "type": "assignment",
+      "category": "history",
+      "dueDate": "2018-07-13",
+      "completed": false
+    },
+    {
+      "title": "Exam 3",
+      "desc": "chapter 3",
+      "type": "assignment",
+      "category": "minor",
+      "dueDate": "2018-08-22",
+      "completed": false,
+      "id": 2
+    },
+    {
+      "title": "Exam 5",
+      "desc": "chapter 5",
+      "type": "assignment",
+      "category": "genEd",
+      "dueDate": "2018-08-25",
+      "completed": false,
+      "id": 3
+    },
+    {
+      "title": "Exam 6",
+      "desc": "chapter 6",
+      "type": "assignment",
+      "category": "genEd",
+      "dueDate": "2018-08-29",
+      "completed": true,
+      "id": 4
+    },
+    {
+      "title": "The Gardens Mall",
+      "desc": "fwef",
+      "type": "assignment",
+      "category": "math",
+      "dueDate": "2018-08-03",
+      "completed": true,
+      "id": 5
+    },
+    {
+      "title": "today",
+      "desc": "llllll",
+      "type": "assignment",
+      "category": "minor",
+      "dueDate": "2018-08-14",
+      "completed": false,
+      "id": 6
+    }
+  ],
+  "classes": [
+    {
+      "id": 1,
+      "type": "assignment",
+      "category": "math",
+      "desc": "gonna learn math 101",
+      "title": "math 101",
+      "credits": 3
+    }
+  ]
+}

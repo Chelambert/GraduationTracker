@@ -1,0 +1,24 @@
+form{
+    margin: $margin;
+}
+
+.form__title{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: $margin;
+    font-size: $font-size-base + .3rem;
+}
+
+.form__input{
+    display: flex;
+    font-size: $font-size-base;
+}
+
+.hide{
+    display: none;
+}
+
+.err{
+    border: 1px solid red;
+}
+

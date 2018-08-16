@@ -1,0 +1,49 @@
+@@include('./partials/header.html')
+
+<main class="page">
+    <header class="page__header">
+        <h1 class="page-title">Assignment Information</h1>
+    </header>
+    <div class="page__body">
+        <form>
+            <div class="todo">
+
+                <div id="success" class="alert success hide">SAVED!!</div>
+                <div id="fail" class="alert error hide">Something went wrong</div>
+
+                <label for="todoTitle" class="form__title">Assignment Title:</label>
+                <input id="todoTitle" required class="form__input" type="text" name="title">
+
+                <label for="todoDesc" class="form__title">Description:</label>
+                <input id="todoDesc" required class="form__input" type="text" name="desc">
+
+                <label for="todoCategory" class="form__title">Category:</label>
+                <select id="todoCategory" name="category" class="form__input">
+                    <option value="">select one</option>
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="genEd">Gen Ed</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                </select>
+
+                <label for="todoDue" class="form__title">Due Date:</label>
+                <input id="todoDue" class="form__input" type="date" name="due">
+
+                <label for="todoCompleted" class="form__title">Completed:</label>
+                <select id="todoCompleted" class="form__input" name="completed">
+                    <option value="no">No</option>
+                    <option value="yes">Yes</option>
+                </select>
+
+
+                <button type="submit" value="Submit" class="btn">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+</main>
+<script src="scripts/todo_data_input.js"></script>
+@@include('./partials/footer.html')

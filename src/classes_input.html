@@ -1,0 +1,38 @@
+@@include('./partials/header.html')
+
+<main class="page">
+    <header class="page__header">
+        <h1 class="page-title">Class Information</h1>
+    </header>
+    <div class="page__body">
+        <form>
+            <div class="classes">
+
+                <label for="classCategory" class="form__title">Category:</label>
+                <select id="classCategory" name="category" class="form__input">
+                    <option value="major">Major</option>
+                    <option value="minor">Minor</option>
+                    <option value="genEd">Gen Ed</option>
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="history">History</option>
+                </select>
+
+                <label for="classDesc" class="form__title">Description:</label>
+                <input id="classDesc" class="form__input" type="text" name="desc">
+
+                <label for="classTitle" class="form__title">Title:</label>
+                <input id="classTitle" class="form__input" type="text" name="title">
+
+                <label for="classCredit" class="form__title">Credits:</label>
+                <input id="classCredit" class="form__input" type="text" name="credit">
+
+                <button type="submit" value="Submit" class="btn">Submit</button>
+
+            </div>
+
+        </form>
+    </div>
+</main>
+<script src="scripts/classes_data_input.js"></script>
+@@include('./partials/footer.html')
