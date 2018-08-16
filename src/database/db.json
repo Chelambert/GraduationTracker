@@ -13,6 +13,7 @@
       "id": 1,
       "title": "first todo",
       "desc": "do this stuff",
+      "type": "assignment",
       "category": "history",
       "dueDate": "2018-07-13",
       "completed": false
@@ -20,6 +21,7 @@
     {
       "title": "Exam 3",
       "desc": "chapter 3",
+      "type": "assignment",
       "category": "minor",
       "dueDate": "2018-08-22",
       "completed": false,
@@ -28,6 +30,7 @@
     {
       "title": "Exam 5",
       "desc": "chapter 5",
+      "type": "assignment",
       "category": "genEd",
       "dueDate": "2018-08-25",
       "completed": false,
@@ -36,6 +39,7 @@
     {
       "title": "Exam 6",
       "desc": "chapter 6",
+      "type": "assignment",
       "category": "genEd",
       "dueDate": "2018-08-29",
       "completed": true,
@@ -44,6 +48,7 @@
     {
       "title": "The Gardens Mall",
       "desc": "fwef",
+      "type": "assignment",
       "category": "math",
       "dueDate": "2018-08-03",
       "completed": true,
@@ -52,6 +57,7 @@
     {
       "title": "today",
       "desc": "llllll",
+      "type": "assignment",
       "category": "minor",
       "dueDate": "2018-08-14",
       "completed": false,
@@ -61,6 +67,7 @@
   "classes": [
     {
       "id": 1,
+      "type": "assignment",
       "category": "math",
       "desc": "gonna learn math 101",
       "title": "math 101",
