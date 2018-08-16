@@ -7,6 +7,7 @@ const todoCompleted = document.querySelector("#todoCompleted");
 
 const frm = document.querySelector("form");
 
+const submit = true;
 
 const BASEURL = "http://localhost:4000/todos"
 
@@ -26,11 +27,37 @@ btn.addEventListener("click", function (e) {
     e.preventDefault();
 
     // create data structure
-    structure.title = todoTitle.value || "Homework Stuff";
-    structure.desc = todoDesc.value || "Do a lot of work and turn it in.";
-    structure.category = todoCategory.value || "Major";
-    structure.dueDate = todoDue.value || "Never";
-    structure.completed = todoCompleted.value || "yes";
+    if( todoTitle.value == '' ) {
+        // add logic here to highlight the form filed specific to the message
+        alert('fill out first name');
+        todoTitle.classList.add('err');
+        return;
+    }
+
+    if( todoDesc.value == '' ){
+        alert('fill out description');
+        todoDesc.classList.add('err');
+        return;
+    }
+
+    if( todoCategory.value == '' ){
+        alert('please select a category');
+        todoCategory.classList.add('err');
+        return;
+    }
+
+    if( todoDue.value == '' ){
+        alert('enter a date');
+        todoDue.classList.add('err');
+        return;
+    }
+
+
+    structure.title = todoTitle.value;
+    structure.desc = todoDesc.value;
+    structure.category = todoCategory.value;
+    structure.dueDate = todoDue.value;
+    structure.completed = todoCompleted.value == 'no' ? false : true;
 
     console.log(JSON.stringify(structure));
 
@@ -54,15 +81,22 @@ btn.addEventListener("click", function (e) {
             success.classList.remove("hide");
 
             // and clear form
+            todoTitle.classList.remove("err");
+            todoDesc.classList.remove("err");
+            todoCategory.classList.remove("err");
+            todoDue.classList.remove("err");
+
             frm.reset();
 
         })
         .catch(function (err) {
+
             // upon fail show fail message
             var fail = document.getElementById("fail");
             fail.classList.remove("hide");
 
             console.log(err)
+
         })
 
 
