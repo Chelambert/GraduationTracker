@@ -95,7 +95,7 @@ btn.addEventListener("click", function (e) {
             var fail = document.getElementById("fail");
             fail.classList.remove("hide");
 
-            console.log(err)
+            console.log(err);
 
         })
 
