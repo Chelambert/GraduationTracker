@@ -15,8 +15,8 @@ const BASEURL = "http://localhost:4000/classes"
 
 const structure = {
     category: "",
-    desc: "",
     title: "",
+    desc: "",
     credits: ""
 }
 
@@ -35,16 +35,16 @@ btn.addEventListener("click", function (e) {
         classTitle.classList.add('err');
         return;
     }
-    if(classCredit.value == ''){
+    if(classCredits.value == ''){
         alert('enter credits');
-        classCredit.classList.add('err');
+        classCredits.classList.add('err');
         return;
     }
 
     structure.category = classCategory.value;
     structure.desc = classDesc.value;
     structure.title = classTitle.value;
-    structure.credits = classCredit.value;
+    structure.credits = classCredits.value;
 
     console.log(JSON.stringify(structure));
 
@@ -71,7 +71,7 @@ btn.addEventListener("click", function (e) {
             classCategory.classList.remove("err");
             classDesc.classList.remove("err");
             classTitle.classList.remove("err");
-            classCredit.classList.remove("err");
+            classCredits.classList.remove("err");
 
             frm.reset();
 

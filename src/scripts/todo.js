@@ -43,7 +43,6 @@ function displayDateTodo(todos) {
     }).join("");
 
     presentDisplay.innerHTML = present.map(function (p) {
-        console.log(p);
         return `<div class="todo-detail ${p.category}">
             <a href="#" class="todo-detail__title">${p.title}</a>
             <span class="${p.type}">${p.type}</span>
