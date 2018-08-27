@@ -7,6 +7,7 @@ fetch("http://localhost:4000/todos")
 
 function displayDateTodo(todos) {
     const past = todos.filter(function (todo) {
+        //return current object (todo) if this statement is true
         return dateFns.isPast(todo.dueDate);
     });
     const present = todos.filter(function (todo) {
@@ -23,6 +24,7 @@ function displayDateTodo(todos) {
 
     pastDisplay.innerHTML = past.map(function (p) {
         console.log(p);
+        //return a new string
         return `<div class="todo-detail ${p.category}">
             <a href="#" class="todo-detail__title">${p.title}</a>
             <span class="${p.type}">${p.type}</span>
@@ -41,7 +43,6 @@ function displayDateTodo(todos) {
     }).join("");
 
     presentDisplay.innerHTML = present.map(function (p) {
-        console.log(p);
         return `<div class="todo-detail ${p.category}">
             <a href="#" class="todo-detail__title">${p.title}</a>
             <span class="${p.type}">${p.type}</span>

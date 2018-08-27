@@ -1,12 +1,12 @@
 //CLASSES
-.classes-details {
+.classes {
     margin-left: $margin;
     display: grid;
     grid-gap: 60px;
     grid-template-columns: 300px 300px;
 }
 
-.classes-detail {
+.class {
     box-shadow: $box-shadow-light;
     padding: 10px;
     border-radius: 5px;
@@ -16,8 +16,8 @@
     }
 }
 
-.classes-img {
-    height: 130px;
+.class__hero {
+    height:130px;
     width: 280px;
     margin-bottom: 20px;
 }
@@ -25,32 +25,32 @@
 // consider a better naming convention for these
 // __box1 does not mean anything to anyone other than you.
 // maybe utilize your school subjects to give them a label
-.classes-img__bioLab {
+.-bioLab {
     background-color: $img-bioLab; // use a variable for all of them
 }
 
-.classes-img__bio {
+.-bio {
     background-color: $img-bio;
 }
 
-.classes-img__publicSpeaking {
+.-publicSpeaking {
     background-color: $img-publicSpeaking;
 }
 
-.classes-img__freedoms {
+.-freedoms {
     background-color: $img-freedoms;
 }
 
-.classes-detail__title {
+.class__title {
     @include link;
 }
 
-.classes-detail__subtitle {
+.class__subtitle {
     color: $brand-primary;
     font-size: $font-size-base - .15rem; // use variable
 }
 
-.classes-detail__info {
+.class__info {
     color: $brand-primary;
     font-size: $font-size-base - .15rem; // use variable
 }
